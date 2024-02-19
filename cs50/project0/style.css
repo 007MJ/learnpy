@@ -18,40 +18,46 @@
 .links {
     margin: 10px;
 }
-
-.search {
-    margin-top: 292px;
+.img_center{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 92px;
-    max-height: 290px;
+    margin-top: 100px;
 }
 
-.button {
-    padding:0 16px;
-    text-align: center;
-    height: 36px;
-    border: 1 px solide c0c5c1;
-    font-size: 14px;
-    color: black;
-    margin: 11px 4px;
-}
-
-.h1 img {
-    height: 200px;
-    width: 80%;
+.search {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 
-img {
-    object-fit: cover;
-}
-
-.bar input {
+.input_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #569cca;
     border-radius: 24px;
-    width: auto;
-    box-shadow: none;
-    border: 1px solid ;
-    min-height: 44px;
+    width: 600px;
+    height: 38px;
+}
+
+.input_container , .material-symbols-outlined{
+    padding: 6px;
+}
+.input_container > input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+.search_but {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search_but input {
+    margin: 5px;
+    padding: 5px;
 }
