@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+
+header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+form {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#name, #number, #email{
+    display: block;
+    width: 80%;
+    height: 30px;
+}
+
+textarea
+{
+    width: 79%;
+}
+
+input[type="submit"]
+{
+    width: 80%;
+    height: 30px;
+}
+
