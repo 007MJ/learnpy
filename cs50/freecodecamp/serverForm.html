@@ -14,7 +14,7 @@
     <main>
         <form action="" id="survey-form">
 
-                <label for="" id="name-label">name <input id="name" type="text" placeholder="Enter your name" required></label>
+                <label for="" id="name-label" >Name <input id="name" type="text" placeholder="Enter your name" required></label>
                 <label for="" id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
                 <label for="" id="number-label">Age (option) <input type="number" id="number" min="10" max="99" placeholder="Age"></label>
                 <p>Which option best describes your current role?</p>
@@ -26,31 +26,39 @@
                     <option value="" id="dropdown">Prefer not say</option>
                     <option value="" id="dropdown">other</option>
                 </select>
-    
+                
                 <p>Would you recommend freeCodeCamp to a friend?</p>
-                <label for="" > <input value="recommend" name="recommendfreeCodeCamp" type="radio">Definitely</label>
-                <label for=""> <input value="recommend" name="recommendfreeCodeCamp" type="radio">Maybe</label>
-                <label for=""> <input value="recommend" name="recommendfreeCodeCamp" type="radio">Not sure</label>
-    
+                <label for="" class="improve" > <input value="recommend" name="recommendfreeCodeCamp" type="radio">Definitely</label>
+                <label for="" class="improve" > <input value="recommend" name="recommendfreeCodeCamp" type="radio">Maybe</label>
+                <label for="" class="improve add_bottom" > <input value="recommend" name="recommendfreeCodeCamp" type="radio">Not sure</label>
+              
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select name="" id="dropdown">
+                    <option value="" id="dropdown">Select an option</option>
+                    <option value="" id="dropdown">Challenges</option>
+                    <option value="" id="dropdown">Projects</option>
+                    <option value="" id="dropdown">Community</option>
+                    <option value="" id="dropdown">Open source</option>
+                </select>
 
                 <p>What would you like to see improved? (Check all that apply)</p>
-                <label for=""><input type="checkbox" value="improve"> Front-end Projects </label>
-                <label for=""><input type="checkbox" value="improve"> Back-end Projects</label>
-                <label for=""><input type="checkbox" value="improve">Data Visualization</label>
-                <label for=""><input type="checkbox" value="improve">Challenges</label>
-                <label for=""><input type="checkbox" value="improve">Open Source Community</label>
-                <label for=""><input type="checkbox" value="improve">Gitter help rooms</label>
-                <label for=""><input type="checkbox" value="improve">Videos</label>
-                <label for=""><input type="checkbox" value="improve">City Meetups</label>
-                <label for=""><input type="checkbox" value="improve">Wiki</label>
-                <label for=""><input type="checkbox" value="improve">Forum</label>
-                <label for=""><input type="checkbox" value="improve">Additional Courses</label>
+                <label for="" class="improve"><input type="checkbox" value="improve"> Front-end Projects </label>
+                <label for="" class="improve"><input type="checkbox" value="improve"> Back-end Projects</label>
+                <label for="" class="improve"><input type="checkbox" value="improve">Data Visualization</label>
+                <label for="" class="improve"><input type="checkbox" value="improve">Challenges</label>
+                <label for="" class="improve"><input type="checkbox" value="improve">Open Source Community</label>
+                <label for="" class="improve"><input type="checkbox" value="improve">Gitter help rooms</label>
+                <label for="" class="improve"><input type="checkbox" value="improve">Videos</label>
+                <label for="" class="improve"><input type="checkbox" value="improve">City Meetups</label>
+                <label for="" class="improve"><input type="checkbox" value="improve">Wiki</label>
+                <label for="" class="improve"><input type="checkbox" value="improve">Forum</label>
+                <label for="" class="improve add_bottom"><input type="checkbox" value="improve">Additional Courses</label>
     
 
-                <p>Any comments or suggestions?</p>
-                    <textarea name="" id="" cols="60" rows="6"></textarea>
+                <p class="_p_bottom">Any comments or suggestions?</p>
+                    <textarea name="" id="" class="bottom_text" cols="60" rows="6" placeholder="Enter your comments here ..."></textarea>
     
-            <label for=""><input type="submit" id="submit" value="Submit"></label>
+            <label for=""><input type="submit" id="submit" value="Submit" ></label>
         </form>
     </main>
 </body>
