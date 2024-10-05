@@ -6,6 +6,22 @@ def digit_number(str):
                 return ""
     return str
 
+
+def juste_number(str):
+    _is_nb = False
+    for index in range(len(str)-1):
+        if str[index].isdigit():
+            index += 1
+            while str[index].isspace() and index < len(str)-1:
+                _is_nb = True
+                index += 1
+            if _is_nb == True:
+                if str[index].isdigit():
+                    print("no operator")
+                    return ""
+            _is_nb = False
+    return (str)
+
 def signe(str):
     _signe = False
     for i in range(len(str) -1):
@@ -42,6 +58,7 @@ def take_number():
             else:
                 str = ""
                 continue
+        str = juste_number(str)
         str = digit_number(str)
         str = signe(str)
         for index in range (len(str) - 1):
